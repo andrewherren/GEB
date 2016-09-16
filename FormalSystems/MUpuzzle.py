@@ -81,4 +81,3 @@ puzzle1.rule3()
 puzzle1.rule2()
 puzzle1.rule4()
 print(puzzle1) # MUIIU
-
