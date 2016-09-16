@@ -20,12 +20,8 @@ class MUpuzzle(object):
         else:
             raise ValueError
 
-    def __repr__(self):
-        """call to repr() function"""
-        return self.inputstring
-
     def __str__(self):
-        """pretty-print puzzle string"""
+        """return inputstring with object printed in console"""
         return self.inputstring
 
     def rule1(self):

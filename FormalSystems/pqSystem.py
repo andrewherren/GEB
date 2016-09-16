@@ -20,7 +20,11 @@ class PQ(object):
         else:
             raise ValueError
 
-    def axiom(self):
+    def __str__(self):
+        """return inputstring with object printed in console"""
+        return self.inputstring
+
+    def increment(self):
         """update the string according to rule:
 
         Suppose x, y, and z all stand for particular strings containing only
@@ -29,3 +33,9 @@ class PQ(object):
         """
         resplit = re.split("p|q", self.inputstring)
         self.inputstring = resplit[0] + 'p' + resplit[1] + '-q' + resplit[2] + '-'
+
+testPQ = PQ('---p--q-----')
+testPQ.increment()
+testPQ.increment()
+testPQ.increment()
+print(testPQ) # ---p-----q--------
